@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>星盘_免费在线占星命盘查询分析_新浪星座_新浪网</title>
+	<meta http-equiv="Content-Disposition" content="attachment;"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keywords" content="星盘,命盘,在线星盘,占星盘,本命盘">
+	<meta name="description" content="新浪星盘,最好用的免费在线占星命盘,提供本命盘,双人盘,推运盘,生理曲线,双人比较盘,组合中点盘,时空中点盘,三限盘,次限盘,太阳弧,运行盘等全面的星盘查询分析。">
+	<link rel="stylesheet" href="/css/product/common2.css">
+	<link rel="stylesheet" href="/css/product/swe-result.css?v=1">
+	<link rel="stylesheet" href="/css/product/share_1.css?v=1">
+</head>
+<body>
+        	<div class="top-bar-wrap">
+	<div class="top-bar">
+		<div class="top-bar-l">
+			<a href="https://astro.sina.com.cn/">新浪星座</a>
+			&#62;
+			<a href="/index">星座收费测算平台</a>
+		</div>
+		<div class="top-bar-r">
+			<a href="https://sina.com.cn" target="_blank">新浪首页</a>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+	@media only screen and (max-width: 1000px) {
+		#force-down{
+			display: block;
+		}
+		#QRcode{
+			display: none;
+		}
+	}
+	.QRcode{
+		float: left;
+		margin-left: 6px;
+	}
+	.QRcode img{
+		float: left;
+		width: 80px;
+		height: 80px;
+	}
+	.tit-wrap{
+		margin-top: 20px;
+	    float: left;
+	    text-align: center;
+	    margin-left: 8px;
+	}
+	.tit-wrap .tit{
+		font-size: 16px;
+		font-weight: normal;
+	}
+	.tit-wrap .text{
+		font-size: 12px;
+	}
+	.button{
+		cursor: pointer;
+	}
+</style>
+<div class="head-wrap">
+	<div class="head clearfix">
+		<div class="head-l">
+			<div id="loggedIn" class="clearfix" style="display:none">
+			</div>
+			<div id="notLoggedIn" style="display:none">
+				<div class="user-avatar">
+					<img src="/images/product/avatar-default.png" alt="">
+					<a href='javascript:;' id="imgLogin" class="img-wrap"></a>
+				</div>
+				<div class="user-login">
+					<div class="clearfix">
+						<p class="login-p1">未登录</p>
+						<p class="login-p2">立刻登录，参加免费测试！</p>
+					</div>
+					<div class="login-wrap clearfix">
+						<div class="login" id="login">登录</div>
+                        <a href="https://login.sina.com.cn/signup/signup.php?entry=astro" target="_blank" class="register">注册</a></div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="QRcode" id="QRcode">
+			<img src="/images/QRcode.png">
+			<div class="tit-wrap">
+				<h3 class="tit">精准运势·权威解盘</h3>
+				<div class="text">扫描下载星座APP，随时看</div>
+			</div>
+		</div>-->
+		<div class="head-r clearfix">
+						<a href="/swe" class="link" target="_blank">占星命盘</a>
+						
+			<div class="search">
+				<div class="s-input">
+					<a href="javascript:;" data-post="0" class="s-type">产品筛选<i>K</i></a>
+					<input type="text" placeholder="请输入关键字&#8203" value=""/>
+					<a class="s-submit" href="javascript:;">A</a>
+				</div>
+				<ul class="s-list">
+					<li class="li-1"><a data-index="0" class="a-1">全部</a></li>
+					<li style="display: none;"><a data-index="1" class="a-1">免费</a></li>
+					<li style="display: none;"><a data-index="2" class="a-1">收费</a></li>
+					<li class="li-1" style="display: none;"><a data-index="3" class="a-1">促销</a></li>
+					<li><a data-index="4">人生</a></li>
+					<li><a data-index="5" data-open>婚恋</a></li>
+					<li><a data-index="6" data-open>事业</a></li>
+					<li><a data-index="7">工作</a></li>
+					<li><a data-index="8">财运</a></li>
+					<!-- <li><a data-index="9">占星类测算</a></li>
+					<li><a data-index="10">紫微类测算</a></li>
+					<li><a data-index="11">八字类测算</a></li>
+					<li><a data-index="12">其他占卜</a></li> -->
+				</ul>
+			</div>
+			<div class="link-phone">
+				<span class="lp-span">l</span>
+				<ul class="lp-ul">
+					<li class="lp-li">
+						<a href="/swe" target="_blank">占星命盘</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+        	<script>
+	var imgLoad;
+	</script>
+	<div class="main-wrap">
+		<div class="main-userinfo-wrap">
+			<div class="main-userinfo clearfix">
+				<a href="http://astro.sina.com.cn/" class="logo"></a>
+				<span>
+									亲爱的<a>lll</a>女士，您的测算结果如下：
+								</span>
+				
+			</div>
+		</div>
+		<div class="main clearfix">
+			<p class="item-title">以下是你的本命盘</p>
+			<div class="img-content1 clearfix">
+				<img src="http://swe.astro.sina.com.cn/r_0/Ma_104d4EL30d40N/Mz_8/Mt_1989|05|26|00|00/swe.png" alt="个人星盘" sign="e861b120cfcc48bb72e09da134b9b1a41687353961" onerror="imgLoad = false;" onload="imgLoad = true" data-size="4:3">
+                                				<a href="javascript:;" class="img-scan" id="imgScan">扫进手机</a>
+				<div class="img-code" id="imgCode">
+					<img src="https://qr.weibo.cn/inf/gen?api_key=c6a4b46b90da7ae6b9355cb986421f3c&amp;data=http%3A%2F%2Fproduct.astro.sina.com.cn%2Fswe%2Fshare%3Fr%3D0%26geo%3DChina%26lon%3D104%253A4E%26lat%3D30%253A40N%26city%3DCH270101%26z%3D8%26y%3D1989%26m%3D05%26d%3D26%26t%3D00%253A00%26name%3Dlll%26sex%3D1&amp;datetime=1687353961&amp;level=Q&amp;size=280&amp;title=Qrcode&amp;type=url&amp;sign=57ecf58abe943f732a4be07046e1e767" alt="">
+				</div>
+				<a href="http://swe.astro.sina.com.cn/r_0/Ma_104d4EL30d40N/Mz_8/Mt_1989|05|26|00|00/swe.png?download=1" class="img-download">下载</a>
+				<!-- <span class="bdsharebuttonbox">
+					<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+					<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+					<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+				</span> -->
+				<div class="social-share" data-initialized="false">
+					<a href="#" class="social-share-icon icon-weibo"></a>
+					<a href="#" class="social-share-icon icon-wechat"></a>
+					<a href="#" class="social-share-icon icon-qq"></a>
+					<a href="#" class="social-share-icon icon-qzone"></a>
+				</div>
+				<span class="img-share">分享到：</span>
+                                			</div>
+			
+					<p class="item-title">星座符号对照表</p>
+			<div class="item-content clearfix">
+				<div class="blk1-item">白羊座<br/><span><a href="//astro.sina.com.cn/focus/Aries/" target="_blank">O</a></span></div>
+				<div class="blk1-item">金牛座<br/><span><a href="//astro.sina.com.cn/focus/Taurus/" target="_blank">Q</a></span></div>
+				<div class="blk1-item">双子座<br/><span><a href="//astro.sina.com.cn/focus/Gemini/" target="_blank">W</a></span></div>
+				<div class="blk1-item">巨蟹座<br/><span><a href="//astro.sina.com.cn/focus/Cancer/" target="_blank">R</a></span></div>
+				<div class="blk1-item">狮子座<br/><span><a href="//astro.sina.com.cn/focus/leo/" target="_blank">U</a></span></div>
+				<div class="blk1-item">处女座<br/><span><a href="//astro.sina.com.cn/focus/Virgo/" target="_blank">P</a></span></div>
+				<div class="blk1-item">天秤座<br/><span><a href="//astro.sina.com.cn/focus/Libra/" target="_blank">Y</a></span></div>
+				<div class="blk1-item">天蝎座<br/><span><a href="//astro.sina.com.cn/focus/Scorpio/" target="_blank">Z</a></span></div>
+				<div class="blk1-item">射手座<br/><span><a href="//astro.sina.com.cn/focus/Sagittarius/" target="_blank">T</a></span></div>
+				<div class="blk1-item">魔羯座<br/><span><a href="//astro.sina.com.cn/focus/Capricorn/" target="_blank">S</a></span></div>
+				<div class="blk1-item">水瓶座<br/><span><a href="//astro.sina.com.cn/focus/Aquarius/" target="_blank">X</a></span></div>
+				<div class="blk1-item" style="border:none">双鱼座<br/><span><a href="//astro.sina.com.cn/focus/Pisces/" target="_blank">V</a></span></div>
+			</div>
+				
+					<div class="item-content">
+				<p class="blk2-tip">也许你根本看不懂你的“生辰图”是什么意思，以下的解释便是决定你人生方向的10颗行星落在不同星座，不同宫位给予你的生命启示：</p>
+				<div class="blk2-summary">
+					<span class="align-l">上升星座：水瓶座</span>
+					<span>下降星座：狮子座</span>
+					<span>天顶星座：天蝎座</span>
+					<span class="align-r">天底星座：金牛座</span>
+				</div>
+				<div class="blk2-list">
+					<span class="blk2-item" ><span><i>0</i>太阳落在双子座；在命盘的第四宫</span></span>
+					<span class="blk2-item" ><span><i>5</i>月亮落在水瓶座；在命盘的第十二宫</span></span>
+					<span class="blk2-item" ><span><i>1</i>水星落在双子座；在命盘的第四宫</span></span>
+					<span class="blk2-item" ><span><i>2</i>金星落在双子座；在命盘的第五宫</span></span>
+					<span class="blk2-item" ><span><i>3</i>火星落在巨蟹座；在命盘的第六宫</span></span>
+					<span class="blk2-item" ><span><i>7</i>木星落在双子座；在命盘的第五宫</span></span>
+					<span class="blk2-item" ><span><i>6</i>土星落在魔羯座；在命盘的第十二宫</span></span>
+					<span class="blk2-item" ><span><i>8</i>天王星落在魔羯座；在命盘的第十一宫</span></span>
+					<span class="blk2-item" style="margin-bottom:0"><span><i>9</i>海王星落在魔羯座；在命盘的第十二宫</span></span>
+					<span class="blk2-item" style="margin-bottom:0"><span><i>:</i>冥王星落在天蝎座；在命盘的第九宫</span></span>
+				</div>
+			</div>
+							<p class="item-title">详细解释</p>
+			<div class="item-content">
+								<p class="blk3-p">太阳落在双子座</p>
+				<p><p>双子座是黄道宫上的第三个星座，代表敏捷的思想和口齿伶俐的沟通能力。是第一个风象星座，偏重心智的发展已慢慢向外拓展，透过和人接触，形成个人观点；因此也象征着从青少年迈向成年的心智成长力量。受水星主宰的双子座和“思想”与“沟通能力”有着密不可分的关系，且有偏重小细节(非宏观或大远景)的倾向。对风象的双子座而言，生动、多样、多变的经验和环境是不可或缺的。另外，从双子座的象征符号“双胞胎”也可看出，他们很明显地需要一位伙伴。双子座的适应能力良好，甚至突然来个大转向也不成问题。双子座是金牛座和巨蟹座之间的过渡星座，将土象金牛座的实际、做事稳定，转化成水象巨蟹座的敏感、富同情心和自我保护色彩。</p><p>双子座代表的是生命周期中的第三个阶段──从14岁到21岁。双子座的性格就像从青少年迈向青年一样，渴望和社会融合的同时，又想突破父母和社会威权的控制。事实上，双子座还称不上叛逆，他们只是想保有个人的自由和自主性。就像是青少年一样，刺激和变化也相当吸引双子座，他们很容易觉得无聊，宁可到外面寻求刺激，也不愿意待在家里，享受安全、简单的乐趣。很少有事情可以像和朋友聚在一起，找些“麻烦事”来做，更令双子座感到满足的了。大胆、冒险的创举，或是重述一件事情时，为了更生动而加油添醋的乐趣，都是他们很喜欢的“麻烦事”。</p><p>双子座通常精力充沛，这是因为受到水星主宰的影响。代表水星的是希腊神话中长有翅膀的信差──莫丘里使者，所有他飞翔过的天际都留下了高速的飞行纪录，受到这样的影响，双子座特别喜欢高度刺激的活动，如果真的有星座能够飞，那一定就是双子座了。很多旅行型态都很吸引双子座，从骑单车、骑摩托车、开车到溜冰等；但是他们又很容易感到厌倦，一想到如此费时费力，便马上打消念头，或改变方向。</p><p>双子座喜欢成为群体中的一份子，而且喜欢用自己的想法和口才活络社交圈的气氛；但是却未必能欣然承担成为群体中一份子应尽的责任。他们常被认为是善变，甚至是肤浅的；但在双子座的想法里，改变心意并不是罪不可赦的事，他们一直谨记在心的座右铭，反而是对一件事不要过度执着。</p></p>
+								<p class="blk3-p">太阳落在第四宫</p>
+				<p><p>太阳处於第4宫非常看重建立安全的家庭；你对家族传统非常骄傲，而且通常很有气质，你希望家庭能成为充满艺术、美感的布置，及显示富裕的感觉。当然，所呈现出的程度要看你的财富及社会阶级而定。你生命的首要目标在於不断的力争上游，朝著生命的尽头持续繁荣，维持促进安全。你对於土地、房屋、生态学、自然资源等会表现出强烈兴趣。如果太阳位於第四宫位而相位不佳时，则会对自我过度骄傲，无法与双亲共处，且容易有控制家中事务的欲望。事实上，在此位置的人们通常希望成为家中之主宰者，或者拥有可以自己处理的财务。</p></p>
+								<p class="blk3-p">月亮落在水瓶座</p>
+				<p><p>月亮在水瓶座的人本性相当包容，很能体会人性的需求。有时候你也会由直觉顿悟知识。这种类型的人对所有人都很友善，但绝不掺杂个人的情感在内。你寻求自由地情绪表达，同时也希望能随心所欲地进入家庭，因此你极可能会拥有不寻常的家庭关系。</p><p>你家中常会聚集许多朋友，举办许多团体活动。如果月亮和其它行星的相位不佳，月亮在水瓶座的人在情绪上会显得有点顽固倔强，会不惜任何代价地去寻求自由。你也害怕私人情感的涉入，因为这极可能也威胁到你的自由。</p></p>
+								<p class="blk3-p">月亮落在第十二宫</p>
+				<p><p>你的情绪反应及心情起伏，受到过去经验的影响很大，且有明显的神精过敏倾向。情绪过于敏感加上不愿和他人沟通自己想法的性格，常会使你变得内向害羞，且容易在情感上受到伤害。一但月亮相位不佳，月亮在第十二宫的人可能会有神精过敏及孤僻的倾向，严重的话，可能还会因心理上的疾病而必需进入收容所去治疗。对你催眠是相当危险的。如果月亮控制着第五、第七或第八宫位，或是与金星或第五宫位的主宰行星有强烈关系的话，那幺你可能会一段神秘的恋情。</p></p>
+								<p class="blk3-p">水星落在双子座</p>
+				<p><p>水星正好就是双子座的主宰行星。如果水星的相位良好，而且所在的宫位很强势，那么你会有极佳的推理能力，而且表达能力很强。水星在双子座的人相当多才多艺，而且会以公正、客观的角度去寻求真理，因为你所重视的是事实的真象，而非个人的态度或偏见。同时还有能力做深层的科学思考。普遍来说，你多半受过良好的教育，精通许多学科，而且有能力用语言或文字来和他人做迅速和精确的沟通。你通常有超强的语言能力，而这也是训练自己的口才及精确表达能力的秘方。</p><p>水星在双子星座的人有一个极为敏感的神经系统，而这也使得你很难排除外界刺激的干扰，所有周遭环境中的言行举止都会被清楚地记在脑海中，而你则被迫要立即处理这些复杂多样的思绪。这也是造就你敏捷头脑的方法，长期训练的结果，你的头脑已能自动地同时记录或思考两件事情。然而，一旦这些人长期处复杂繁忙的环境中，你的神经系统就会变得疲惫、混乱，有时可能还会容易动怒。因此你也需要过一阵子清静、单纯的生活，让自己疲惫的心灵稍微舒解一下。</p><p>水星在双子星座的人具有强烈的好奇心；想要知道每一件事情。但是有时会把自己搞得分身乏术，常常会分散自己的注意力，你缺乏完成一件大事需有的持续力及耐性。严重的话，这种性格可能会使你变得“学无专精”。除此之外，由于你会用各种不同的观点来看待任何状况，所以常会感到难做决定，而且这常常更改主意，这会使得其它人备感困扰。</p><p>唯有水星在水瓶座的人的创造力才能和你相媲美。你善发明的头脑精于为急切的问题，找出新奇而且令人出乎意料的解答。你需要受良好的教育才能使聪明才智获得充分的发挥。水星在双子星座的人相当适合从事科学家、计算机专家、秘书、作家、记者、老师及讲师的工作。</p><p>如果水星相位奇差，你可能会滔滔不绝地讲述一些琐碎的事物，这会对他人造成相当大的困扰。而对那些潜力尚未获得启发的人来说，你很有可能会钻牛角尖而忽略了问题的主题性何在。</p></p>
+								<p class="blk3-p">水星落在第四宫</p>
+				<p><p>水星在第四宫的人会在家中进行心灵与教育的活动。你会成为受过良好教育的父母亲，也爱好夸耀上一辈的事迹。</p><p>你的家常被当作工作场所，因为控制处女座及第六宫的水星恰好主掌相关事务。你常会收集与家族有关的资料，然后花很多时间来与家人做分享。你家可能会成为邻近地区的交流中心，而且会花很多时间在交谊上。你通常会有边吃早餐边看报纸的习惯。</p><p>你对房地产、农业、地球科学，如地理以及生态环境的问题相当感兴趣；你可能会成为这些领域的作家。你常会变更住所，也可能过着有如游牧民族的生活。如果水星相位不佳，则可能常常与他人意见不合。</p></p>
+								<p class="blk3-p">金星落在双子座</p>
+				<p><p>金星位于双子座喜欢多釆多姿的爱情及社交生活。由于希望体验不同的经验以及对人的好奇心，所以你很难安于一段持续的关系；就像金星处于水瓶座，此一位置使你想和每个人都成为朋友。由于你的机智及交谈能力，你会被心灵敏捷及智识高尚的人所吸引，这是由于金星的特质即在于需要足够的知识养分。</p><p>金星处于这个位置的人会花很多时间在追求愉悦及社交的活动上。文艺活动，尤其是诗歌及笑语，是你相当喜好的艺术表达方式。</p><p>和其它风象星座一样，你具有一种厌恶粗野行径的倾向，拥有愉快的态度，可与兄弟、姊妹、邻居保持良好的关系，如果金星相位不佳，爱情生活可能会出现不一致及变化无常的情况，而且对于爱情、婚姻、浪漫的评价可能流于肤浅。</p></p>
+								<p class="blk3-p">金星落在第五宫</p>
+				<p><p>金星位于第五宫的人，具有强烈的快乐导向及浪漫的本质，对于生命会以开朗的态度来面对。浪漫对你是非常重要的；如果相位良好，你透过浪漫情爱将会得到快乐及幸福。金星位于第五宫的人拥有许多发展恋情的机会。你通常很受欢迎，可亲又喜好艺术，很有天分，尤其是在表达艺术上。你的社交及学会活动经常与戏剧及音乐表演有关的。</p><p>这个金星位置的人对孩子有深深的爱，会成为最有爱心的双亲、老师及孩童心理学家，你的孩子可能成为具有艺术天分及外向的女孩。</p></p>
+								<p class="blk3-p">火星落在巨蟹座</p>
+				<p><p>火星位于巨蟹座乃是处于下降情况，由于巨蟹座与火星上升的魔羯座成相对位置，因此火星处于本位置的人会有强烈的情感。心境及情感的挫折会引致愤怒，如果公开表现出来的话，会引致家人关系的不和，与双亲的关系也可能不协调。这在未来的生命中会形成心理障碍，如果压抑愤怒的话，也会形成心理问题，可能会造成溃疡及胃的不适。</p><p>在家中的关系也可能有过分具侵略性的倾向，家中是个不适合表现过于激烈的场合。然而，火星位于巨蟹座的活力可以善用于建立或促进家务之上，例如：木工或其它的修护工作。许多自己动手做的修理人员便是属这类人，此外这类人亦有强烈的欲望想拥有、建立自己的家庭。</p></p>
+								<p class="blk3-p">火星落在第六宫</p>
+				<p><p>火星位于第六宫代表透过工作表现活力，工作通常会涉及敏锐的仪器或机械，而且会消耗并产生极大的能量，因此你可以适合从事机械、引擎、工程师。外科医师及有关药物的人也多半具有这类火星位置，甚至包括准备餐桌布置及服装制造者等。</p><p>你是辛勤、有活力的工作者，对于懒惰的人非常不耐烦，你在工作中会展现技巧及精确度，你的自尊来自工作的成效。</p><p>正如火星位于摩羯座上升，此一宫位代表上司。火星位于第六宫位会在组织良好、有效率的商业机构工作，并且可以获得保障及成就。</p><p>如果火星在此相位不良，可能因为过劳或工作意外而引起健康不良，外伤或脾气暴躁等。此外还可能会涉及劳工争议，与工作者、雇主、受雇者之间有所冲突，有时他具有完美主义的倾向，而且因为过度关心工作的细节，而忽略了重点。</p></p>
+								<p class="blk3-p">木星落在双子座</p>
+				<p>
+<p>　　木星落在双子在星相学上称为落陷，所能发挥的好运有限。</p>
+
+<p>　　你天性喜爱思考，心灵成长为你开启了与社会沟通的一条新路线，这对与旅行、写作、研究有关行业相当有帮助。你具有开发心智的强烈好奇心，因此即使你无法接受正规教育，智能也超乎常人，通常他们会将大学时代所受的训练当作是一种自我心智改善的方法。</p>
+
+<p>　　木星在双子座的人，由领悟力涉猎不同的领域，你的脑子一天到晚动个不停，喜欢到处旅游，并且会涉猎所感兴趣的学科，严重的话这种性格会导致你对每件事都一知半解，然而广泛尝试不同的经验，使你对琐碎的信息整合成一个普遍的原则，因此很能够洞察世情。</p>
+
+<p>　　你是很有深度的批评家，由于双子天秤及水瓶座同属三合星座，所以你会吸引许多朋友增广自己的见闻，这些社会交际使你有机会将心中的创意表达出来。</p></p>
+								<p class="blk3-p">木星落在第五宫</p>
+				<p><p>木星在第五宫的人，具有艺术、教育、体育方面的创造力，因为你特别喜爱幼童，使你成为幼儿教育者，你的子孙通常也很成功而且与众不同。你通常会投身于商业投资、教育、艺术或娱乐界，你很能带给人们罗曼蒂克的快乐，但切勿过份自满，而造成金钱的损失。</p></p>
+								<p class="blk3-p">土星落在魔羯座</p>
+				<p><p>土星位于魔羯座，暗示了个人对世界性的权力、地位、权威有强烈的野心，这通常透过商业、科学及政治方面表达出来。这些人通常有强烈的需求，渴望在他们的事业中达成重要的成就，而且当他们心中不是胸有成竹时，不会接受任何责任。他们是良好的组织者，在达成自己的野心之前善于找到良好的平衡点。因此，最擅长在没有风险的情况下谋求名声地位。从他们身上散发出来的严肃、高贵气质，使他们显得既严厉又冷漠。虽然他们有接受权威人士命令的雅量，可是当他们自己达到权威般的地位时，他们还是会期望他人对他们有相同的服从。因此，他们在商业及政治上的态度很保守，他们认为传统权力架构存在有其一定的理由，而这不容被那些缺乏权力掌控方面实务经验的人质疑。</p><p>他们早年为了达到成功以及自我满足所做的努力，促使了他们晚年实际及保守的态度。他们觉得一个人在还不能成功地管理他们自己的事情之前，是没有资格给别人忠告，或者是负担更大的政治及经济责任的。</p></p>
+								<p class="blk3-p">土星落在第十二宫</p>
+				<p><p>土星在第十二宫的人有许多时间是独居、或从事幕后工作，你必须忍受孤独，应防范严重的心理疾病，你必须知道心中的敌人都是自己所假想的，而非真实存在，若藉由服务他人的慈善工作，则可驱离你的心魔。</p></p>
+								<p class="blk3-p">天王星落在魔羯座</p>
+				<p><p>天王星位于魔羯座，暗示了这一时代的人对政府及商业权力结构力重要的影响力。你希望改善自己的地位来确保自己将来的安全，但在实行时应特别小心，因为这就像在旧基础上建筑新东西，在勉强完成过去的情况下追求建设性的改变。</p><p>你有强烈的野心及期望成功，对于科学及商业有原始的思想，这是你赖以进展事业及提升地位的方法，你也会在创新及不寻常的方法下改善旧思想。</p><p>如果天王星受困于此，你可能有过度的野心以及在追求事业进展上过度扩张自我。</p></p>
+								<p class="blk3-p">天王星落在第十一宫</p>
+				<p><p>天王星在第十一宫的人有开放的心胸，关心真理、不相信八卦流言，你拥有深刻的直觉，有许多知心的朋友，你对于婚姻及爱情的态度是反传统和放纵的，不希望被固定的关系所束缚，你能接受任何新观念。</p></p>
+								<p class="blk3-p">海王星落在魔羯座</p>
+				<p>
+<p>　　当海王星进入魔羯座时，世界各国的政局开始混乱不安，经济制度与政治制度也将受到强烈的震撼。然而，在这些混乱与不安之外，才真正在现实社会中，看见人类心灵情操的具体实践。</p>
+
+<p>　　人类将不再有闲情逸致追求射手座抽象性的崇高价值。为了求生存，人类必须被迫将精神性灵与现实生活整合。由于双鱼座时代来临之前，人类必须经历不同阶段的考验，因而，在这个时期中能存活下来的人，将能在精神上达到更高的境界。</p>
+
+<p>　　为了现实需要，新形态的政府组织及政治观念将会出现。在这一个时期结束之前，无国界的政府组织将会出现。</p></p>
+								<p class="blk3-p">海王星落在第十二宫</p>
+				<p><p>海王星在第十二宫的人追求个人的隐私，以求心灵深处的宁静，若相位佳，则善于分析人的心理，对艺术方面很有天份，但必须注意的是自己要学习处理负面的情绪，不沉迷于幻想而远离了现实。</p></p>
+								<p class="blk3-p">冥王星落在天蝎座</p>
+				<p><p>当冥王星位在天蝎座时，举世的对立将会达到最紧张的局面。“重生或是死亡”将会是这一天来临时所必须作的选择，因为冥王星是天蝎座的主宰行星，天蝎座是一个主宰着重生或死亡的星座，除了它以外，没有任何一个星座具有这种迫人的压力。双鱼座的时代是否能够到来，全视这一个关键时期，它掌握的是最后一口决定性的喘息--即将结束或是要重新开始。人类的愚昧将耗尽所有的时间，除了面对结果之外，人类将毫无选择。</p><p>冥王星自天秤座走向天蝎座时运行的速度是最快的。正如圣经上所启示的，“除非我把时间缩短，否则人类终将毁灭”。最可怕的天灾、饥荒及生物、原子战争将在二十世纪结束前的最后二十五年间发生。自一九七五至二000年，天王星位在天蝎座，而一九八四年至世纪末，冥王星也位在天蝎座。在这段时期内，人类将被迫面临最后的抉择，准备重生，开始迎接水瓶座时代，及公元第两千年。</p></p>
+								<p class="blk3-p">冥王星落在第九宫</p>
+				<p><p>冥王星在第九宫的人对整体社会秩序有深刻的洞析力，因而能对人类的未来提出重要的预言，你天生是领袖人物，有追求名誉的野心，但当野心过大时，会导致自傲自满的心态。你对社会不公及权威体制无法忍受，因此你是支持革新的一份子。</p></p>
+								<p class="blk3-p">太阳与水星呈0度</p>
+				<p><p>太阳与水星成合相赋予创意和行动的能力，这种相位显示出以意志力来贯彻意见和决定。虽然如此，由于这个相位非常逼近心灵和自我，所以它也妨碍了在自我分析方面的客观程度。这使得拥有这种相位的人很难客观地来审视自己。如果水星在二分一度到四度的轨道内与太阳成合相，据说这样的水星是“燃烧的”，会造成思考中存有过多太阳能的情况。之后，常会在沟通和思考过程中发生中断的现象。当水星在少于二分之一度或三十度与太阳成合相时，这样的水星据说是“善良的”。这种位置，虽也有一些“燃烧”的困难，也是一种“尊严”。如果波浪、模式非常完美，太阳能量就能受到水星的规范，而成为心灵完美频率的携带者。换句话说，意志变成了心灵发展的媒介。这就提供了高度的智能力量，尤其是合相生在双子座、处女座、水瓶座和天秤座的情况下。</p></p>
+								<p class="blk3-p">月亮与上升呈0度</p>
+				<p><p>这种合相使这类人用他们的感情来辨别他们基本的良心。在正向，它能带领出好记忆，并且使无意识的心灵觉醒。这类人有着活泼的想象力和较感情化的情绪，富同情心，这种合相对女人比对男人好，因为仑在态度上和表面上倾向女性化。这类人通常有张充满感情，正圆形的脸。他们是易感的，并且对生命的经历以一种感情、个人的方式深深的触着他们的内心，早期童年的经孰比别人更多，这会影响他们后来的人格。他们似乎强烈的认同家和家庭，如果星象图的其它部份都确实，这更指示了心灵上的倾向。如果这合相是受困的，对生命的反应会是过分主观和个人的。</p></p>
+								<p class="blk3-p">土星与海王星呈0度</p>
+				<p><p>这个合相具备了稳重、专心冥想的力量以及机敏的天赋。当情况良好时，他们也拥有精神上的成熟与基于实际经验的怜悯情结。他们可以使用海王星实际的灵感，所以不会太过不切实际。由土星所赐予的灵感形成，而且带来具体的表达能力，这个合相的人十分爱好艺术与音乐。他们还以说是专业的保证，也很适合做些幕后活动。若是合相受困，就会涉及诈欺的事件。如果相位良好，他们会天生善于行走，走的姿势又轻快，又能走得很远。</p></p>
+								<p class="blk3-p">月亮与水星呈120度</p>
+				<p><p>这个三分相带给人好的记忆力，他们的潜意识与表面意识能相互协调，共同合作；有关人及家人的事情，他们能有建设性的意见。这个分相最大的特色，是具有对普遍人事物的理解能力，对于日常生活的大小事物，他们常能准确地推理，并且能与人充分沟通。他们颇有经商的能力，特别是与食品或家庭日用品有关的经营，会有很好的表现。</p></p>
+								<p class="blk3-p">太阳与月亮呈120度</p>
+				<p><p>太阳与月亮呈120度这个三分相指出一个人各方面的表现，与他们的潜能、天性、或家庭背景、过去养成的习惯皆能配合。这些人往往有好的体力，他们的身体健康、精力充沛，疲劳也能很快解除。这种人在阴阳两面能取得平衡。由于这个分相具有内在的和谐，因而非常吸引异性。他们在各种社会关系中能表现出最恰当的一面，这个分相能带来积极乐观及自信。这些人会与家人相处得很融洽。</p></p>
+								<p class="blk3-p">太阳与上升呈120度</p>
+				<p><p>他们积极乐观又有自信心，具有丰富的意志力及精力，他们宽大的肚量可争取旁人的合作意愿，此相位也会为他们带来和谐的人际关系。</p></p>
+								<p class="blk3-p">水星与上升呈120度</p>
+				<p><p>这个组合相具有感性、敏感的心，并且聪慧机智。这些人能够毫无阻碍地表达自己，并说服旁人相信他们的想法。也就是籍由这个方法，他们才能获得帮助以实现他们的目的。由于他们优秀的表达能力，使他们拥有好的社会形象，及交际手腕。</p><p>他们与配偶、工作伙伴及朋友的关系非常融洽，不仅相互信赖，还能够相互帮助。这个分相还会为他们带来高智力，使他们有好的学业表现，或是成为有名的学着、研究人员。特别是在水星与其他星体之间也有好很的星象时，这种智能的表现，更为突出。</p></p>
+								<p class="blk3-p">土星与冥王星呈60度</p>
+				<p><p>这个普相给人组织及控制意志力的能力。这些人有机会藉由自我约束及辛勤的工作不断给自己重生的机会。这个分相还可以带来物理及数学方面的天份。这种人不但抱负不凡，而且能够精准、聪明的运用他们的权力及力量。</p></p>
+								<p class="blk3-p">金星与木星呈0度</p>
+				<p><p>这种合相给人慷慨乐观的性情。除非他们的天宫图上有其它强烈的反向因素甘扰，否则他们都会对他们的同伴诚恳与亲切，并对那些需要帮助的人表现的可亲、慷慨。他们会协助不幸的人们而慷慨解囊。他们能为他人带欢乐。他们对艺术、审美的能力亦表露在外。从负面观点来看，此种合相可能带给他们自己的利益则是过轻松舒适的生活，因而造成了懒散的倾向。</p></p>
+								<p class="blk3-p">海王星与冥王星呈60度</p>
+				<p><p>这两个行星在公元一九七三年，五月这一个日期之后，仍将持续至少三十年的时间在六分相的关系。因此，这个分相对于举世的因果报应及命运的影响远大过对个人的影响。在历史发展至今的关键时刻，我们能拥有这个六分相，实在是幸运极了。这一个原子世纪，可以为全人类带来更多的繁荣与幸福，否则，它将意味着文明的毁灭。在个人的星宫命盘里，海王星或冥王星必需同时与其它星球呈棱角关系，并被其它星球所形成的分相强烈影响，这种组合相，才会表现出灵异、直觉、科学、美学方面的能力。</p></p>
+								<p class="blk3-p">火星与土星呈180度</p>
+				<p><p>这个分相具有忿怒、沉重的性情。他们时常会感到挫折，而且必需以暴力、激烈的行为才能克服他们害怕受人否定的自卑感，并把自己的长处及领导者的权威表现出来。这些人的事业野心，会被噩运及掌权者磨蚀。他们与父母的关系并不好，特别是父亲那一方，因为他们的父母会带给他们压迫感。因为合伙事业或共有的财产而产生的问题，会使他们与人之间的关系趋近紧张。这些人极不友善，而且拒绝帮忙别人，同样地，别人也不愿意帮助他们。</p></p>
+								<p class="blk3-p">火星与冥王星呈120度</p>
+				<p><p>这个三分相具有发展成熟的意志力，及反省自己、反省一切行为的能力。如果情况需要，他们会毫不留情地护卫他们认定的真理。他们没有丝毫畏惧，更不会被恐惧、危险击退。有些人对生命有着积极热情的态度，把生活看作是源源不绝的生命泉源，而绝不是静态的现实情况而已。通常，他们有强健的体格，且有特别旺盛的精力。</p></p>
+								<p class="blk3-p">火星与海王星呈180度</p>
+				<p><p>这个对分相具有敏锐而难以控制的欲望。火星冲动而暴力的顷向在潜意识中会不断发挥作用，使得这些人不能明白自己言行举止真正的目的是为了什么?这个对分相最大的危机是情绪化的特质。他们的行为有时候会秘密的进行，极端的情况下会出现狡猾、欺骗的行为。有时候，不正常的病态性欲望会影响他们的家庭及工作表现。如果星宫命盘出现的特征表示他们会是受人喜爱、尊敬的好人。那么，这个分相表示他们过度压抑自己的欲望，因而会引出多种精神疾病。</p></p>
+							</div>
+				</div>
+	</div>
+        	<a href="/swe/#0" class="go-on">BACK</a>
+	<div class="footer-wrap">
+    <div class="footer">
+    	<p><a href="https://comment5.news.sina.com.cn/comment/skin/feedback.html?channel=ly&newsid=23" target="_blank">意见反馈留言板</a>|<span class="footer-span">电话：4000520066</span>|<span class="footer-span">欢迎指正</span></p>
+        <p><a href="https://corp.sina.com.cn/chn/" target="_blank">新浪简介</a>|<a href="https://corp.sina.com.cn/eng/" target="_blank">About Sina</a>|<a href="https://emarketing.sina.com.cn/" target="_blank">广告服务</a>|<a href="https://www.sina.com.cn/contactus.html" target="_blank">联系我们</a>|<a href="https://corp.sina.com.cn/chn/sina_job.html" target="_blank">招聘信息</a>|<a href="https://www.sina.com.cn/intro/lawfirm.shtml" target="_blank">网站律师</a>|<a href="https://english.sina.com/" target="_blank">SINA English</a>|<a href="https://login.sina.com.cn/signup/signup.php" target="_blank">通行证注册</a>|<a href="https://help.sina.com.cn/" target="_blank">产品答疑</a></p>
+		<p>Copyright <span style="font-family:arial;">&copy; </span><span id='CopyrightD'></span> SINA Corporation, All Rights Reserved</p>
+        <p>新浪公司 <a href="https://www.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a></p>
+    </div>
+</div>
+<script>
+var myDate = new Date();
+document.getElementById("CopyrightD").innerHTML="1996-"+myDate.getFullYear();
+</script>
+<div id="ssoHidden" style="display:none"></div>
+<script src="/js/product/lib/sea.js"></script>
+<script src="/js/product/lib/sea.config.js?v=1687353961"></script>
+<script type="text/template" id="loggedInTemplate">
+<div class="user-avatar" >
+	<a href="/home/" target="_blank">
+		<img src="<%=res.avatar_large %>" alt="">
+	</a>
+	<a class="img-wrap" href="/home/" target="_blank"></a>
+</div>
+<div class="user-info">
+	<span>
+	<a href="/home/" target="_blank"><%=res.name %>&nbsp&nbsp</a>
+	</span>
+		<a href="javascript:;" id="logout">(退出)</a>
+    	<br/>
+	<a class="user-btn2" href="/home">查询消费记录</a>
+	<a class="user-btn1" href="/home/copy">管理个人档案</a>
+</div>
+</script>
+<script type="text/javascript">
+	var rootUrl = "https://product.astro.sina.com.cn";
+	var signinUrl = "";
+	var logoutUrl = "";
+	var userInfo = '';
+	seajs.use(['network','underscore','utils','outlogin_layer'],function(net,und,uti){
+		var loggedIn = document.getElementById('loggedIn'),
+			notLoggedIn = document.getElementById('notLoggedIn'),
+			loginBtn = document.getElementById('login'),
+			loginImg = document.getElementById('imgLogin');
+
+		// for sina.com.cn
+		var loginLayer = window.SINA_OUTLOGIN_LAYER;
+		var initMark = false;
+		if (loginLayer && !userInfo){
+			var STK = loginLayer.STK;
+			STK.Ready(function(){
+				if(!loginLayer.isLogin()){
+					uti.byId('notLoggedIn').style.display = '';
+					initMark = true;
+				}
+
+				STK.addEvent(loginBtn,"click",function(){
+					if(uti.isMobile()){
+						window.open('https://passport.sina.cn/signin/signin?entry=wapsso&vt=4&r=&revalid=1','_self');
+					}else{
+						loginLayer.show();
+					}
+				});
+				STK.addEvent(loginImg,"click",function(){
+					if(uti.isMobile()){
+						window.open('https://passport.sina.cn/signin/signin?entry=wapsso&vt=4&r=&revalid=1','_self');
+					}else{
+						loginLayer.show();
+					}
+				});
+				STK.addEvent(loggedIn,'click',function(e){
+					var e = e || window.event;
+					var src = e.target || e.srcElement;
+					if (src && src.id === 'logout'){
+						if (e.stopPropagation){
+							e.stopPropagation();
+						}else{
+							e.cancelBubble=true;
+						}
+						loginLayer.logout();
+					}
+				});
+
+				
+				loginLayer.set('sso',{
+					entry : 'astro'
+				}).set('extra',{
+					css:'https://i.sso.sina.com.cn/css/outlogin/v1/outlogin_skin_finance.css'
+				}).set('plugin',{
+					parentNode:document.body,
+					position:'custom'
+				}).set('styles',{
+					top :'150px',
+					left :'50%',
+					marginLeft:'-240px'
+				}).register('login_success', function(){
+					if (!initMark){
+						notLoggedIn.style.display = 'none';
+                        loggedIn.style.display = '';
+                        net.getUserInfo(null,function(d){
+                        	var loggedInTemplate=_.template(document.getElementById('loggedInTemplate').innerHTML);
+                        	if(d.status === 0){
+	                        	uti.emptyHtml(loggedIn).innerHTML = loggedInTemplate({res:d.data});
+                        	}else{
+                        		SINA_OUTLOGIN_LAYER.getWeiboInfo({
+		                        	onSuccess : function(res){
+		                        		uti.emptyHtml(loggedIn).innerHTML = loggedInTemplate({res:res.data});
+		                        	}
+		                        });
+                        	}
+                        });
+                        initMark = true;
+					}else{
+						setTimeout(function(){//防止ie死锁
+							window.location.reload();
+						},100);
+					}
+				}).register('logout_success', function(){
+                	if(!initMark){
+                		notLoggedIn.style.display = '';
+                    	loggedIn.style.display = 'none';
+                    	initMark = true;
+                	}else{
+                		setTimeout(function(){//防止ie死锁
+							window.location.reload();
+						},100);
+                	}
+				}).init();
+			});
+		}
+
+		// for sina.cn
+		if (userInfo) {
+			uti.addEvent([loginBtn, loginImg], "click", function(){
+				window.open(signinUrl,'_self');
+			});
+			uti.addEvent(loggedIn,'click',function(e){
+				var e = e || window.event;
+				var src = e.target || e.srcElement;
+				if (src && src.id === 'logout'){
+					if (e.stopPropagation){
+						e.stopPropagation();
+					}else{
+						e.cancelBubble=true;
+					}
+					window.open(logoutUrl,'_self');
+				}
+			});
+
+			if (userInfo === '1'){
+				notLoggedIn.style.display = 'none';
+                loggedIn.style.display = '';
+                net.getUserInfo(null,function(d){
+                	var loggedInTemplate=_.template(document.getElementById('loggedInTemplate').innerHTML);
+                	if(d.status === 0){
+                    	uti.emptyHtml(loggedIn).innerHTML = loggedInTemplate({res:d.data});
+                	}
+                });
+	        } else {
+	        	notLoggedIn.style.display = '';
+                loggedIn.style.display = 'none';
+	        }
+		}
+
+		/* search */
+		var searchHandler = uti.byClass('s-type',null,'a')[0],
+			serchInput = uti.nextElementSibling(searchHandler),
+			searchSubmit = uti.nextElementSibling(serchInput),
+			searchList = uti.byClass('s-list',null,'ul')[0],
+			searchShowStatus = false,
+			searchTag = typeof searchIndex === 'undefined' ? 0: searchIndex;
+
+		//init
+		var str = uti.elementChildren(uti.elementChildren(searchList)[searchTag])[0].innerHTML;
+		searchHandler.innerHTML = str + '<i>K</i>';
+		searchHandler.setAttribute('data-post',searchTag);
+		serchInput.value = typeof searchStr === 'undefined' ? '' : searchStr;
+
+		// placeHodlder for ie8 and lower versions
+		new uti.placeHolder();
+
+		//define
+		function hideSearchList(){
+			searchList.style.display = 'none';
+			searchShowStatus = false;
+			uti.removeEvent(document,'click',null);
+		}
+		function showSearchList(){
+			hideLinkList();
+			searchList.style.display = 'block';
+			searchShowStatus = true;
+		}
+		function searchOpen(){
+			var searchValue = serchInput.value.replace(/(^\s*)|(\s*$)/g, "");
+			searchValue = searchValue === serchInput.getAttribute('placeholder') ? '' : searchValue;
+			var openUrl = rootUrl+'/?tag='+ searchTag + '&words=' + searchValue;
+			window.open(openUrl,'_blank');
+		}
+		uti.addEvent(searchHandler,'click',function(e){
+			var e = e || window.event;
+			if (searchShowStatus){
+				hideSearchList();
+			}else{
+				uti.addEvent(document,'click',function(){
+					hideSearchList();
+				});
+				showSearchList();
+				if(e.stopPropagation){
+					e.stopPropagation();
+				}else{
+					e.cancelBubble = true;
+				}
+			}
+		});
+		uti.addEvent(searchList,'click',function(e){
+			var e = e || window.event;
+			var src = e.target || e.srcElement;
+			if (src && src.nodeName.toUpperCase() === 'A'){
+				var str = src.innerHTML;
+				var index = src.getAttribute('data-index');
+
+				searchTag = +index;
+				searchHandler.innerHTML = str + '<i>K</i>';
+				searchHandler.setAttribute('data-post',index);
+
+				if (src.getAttribute('data-open') != null) {
+					searchOpen();
+				}
+
+				hideSearchList();
+			}
+		});
+		uti.addEvent(searchSubmit,'click',function(){
+			// if(serchInput.value.replace(/(^\s*)|(\s*$)/g, "")){
+			// 	searchOpen();
+			// }
+			searchOpen();
+		});
+		uti.addEvent(serchInput,'keyup',function(e){
+			var e = e || window.event;
+			var src = e.target || e.srcElement;
+			// if(e.keyCode === 13 && src.value.replace(/(^\s*)|(\s*$)/g, "")){
+			// 	searchOpen();
+			// }
+			if(e.keyCode === 13){
+				searchOpen();
+			}
+		});
+
+		//phone link
+		var linkHandler = uti.byClass('lp-span',null,'span')[0],
+			linkList = uti.nextElementSibling(linkHandler),
+			linkShowStatus = false;
+		function hideLinkList(){
+			uti.removeClass(linkHandler,'active');
+			linkList.style.display = 'none';
+			linkShowStatus = false;
+			uti.removeEvent(document,'click',null);
+		}
+		function showLinkList(){
+			hideSearchList();
+			uti.addClass(linkHandler,'active');
+			linkList.style.display = 'block';
+			linkShowStatus = true;
+		}
+		uti.addEvent(linkHandler,'click',function(e){
+			var e = e || window.event;
+			if (linkShowStatus){
+				hideLinkList();
+			}else{
+				uti.addEvent(document,'click',function(){
+					hideLinkList();
+				});
+				showLinkList();
+				if(e.stopPropagation){
+					e.stopPropagation();
+				}else{
+					e.cancelBubble = true;
+				}
+			}
+		});
+
+		//debug for body width 100% in IE8
+		var isIE = uti.isIE();
+		if (isIE && isIE < 9){
+			var db = document.body,
+				dde = document.documentElement,
+				bw = 1260;//main width
+			function adjustBodyWidth(){
+				db.style.width = dde.clientWidth > bw ? "100%" : bw + 'px';
+			}
+
+			function throttle(method, context) {
+				clearTimeout(method.tId);
+				method.tId = setTimeout(function(){
+					method.call(context);
+				},100);
+			}
+
+			window.onresize = function(){
+				throttle(adjustBodyWidth);
+			}
+
+			adjustBodyWidth();
+		}
+	});
+</script>
+
+        
+    <script>
+	var imgScan = document.getElementById('imgScan');
+	var imgCode = document.getElementById('imgCode');
+	if (document.addEventListener)
+		window.addEventListener('click',function(){
+			imgCode.style.display = 'none';
+		},false)
+	else 
+		window.attachEvent("onclick",function(){
+			imgCode.style.display = 'none';
+		});
+	imgScan.onclick = function(e){
+		imgCode.style.display = 'block';
+		var e = e || window.event;
+		if(e.stopPropagation){
+			e.stopPropagation();
+		}else{
+			e.cancelBubble = true
+		}
+	}
+</script>
+<script>
+	//img error
+	seajs.use(['utils','network'],function(uti,net){
+		var img = uti.byAtrName('sign',null,null,'img')[0],
+			imgWidth = 0,
+			imgHeight = 0,
+			arr = img.getAttribute('data-size').split(':'),
+			imgSize = +arr[1]/+arr[0];
+		if(imgLoad === false){
+			reportImgError();
+		}else if (imgLoad === true){
+			if(uti.isMobile()){
+				adjustImgSize();
+				uti.addEvent(window,'resize',function(){
+					adjustImgSize();
+				});
+			}
+		}else{
+			uti.addEvent(img,'error',function(e){
+				reportImgError();
+			});
+			if(uti.isMobile()){
+				uti.addEvent(window,'resize',function(){
+					adjustImgSize();
+				});
+				uti.addEvent(img,'load',function(e){
+					adjustImgSize();
+				});
+			}
+		}
+		function adjustImgSize (){
+			imgWidth = img.offsetWidth;
+			imgHeight = imgWidth*imgSize;
+			img.style.height = imgHeight + 'px';
+		}
+		function reportImgError (){
+			var info = '[platform|' + uti.getPlatform() + 
+			'][userAgent|' + uti.getUserAgent() + 
+			'][connection|' + uti.getConnection() +']';
+			img.setAttribute('alt','图片加载失败，请稍后再试');
+			var imgSrc = img.getAttribute('src');
+			var imgSign = img.getAttribute('sign');
+			net.report({'src':imgSrc,'sign':imgSign,'info':info});
+		}
+	});
+</script>
+<!-- <script>
+	window._bd_share_config={
+		"common":{
+			"bdSnsKey":{},
+			"bdText":"#我的星盘#本宫绝世冷艳，被万字免费报告解读透了。",
+			"bdMini":"2",
+			"bdMiniList":false,
+			"bdPic":"http://swe.astro.sina.com.cn/r_0/Ma_104d4EL30d40N/Mz_8/Mt_1989|05|26|00|00/swe.png",
+			"bdUrl":"http://t.cn/A6pZ4HAW",
+			"bdStyle":"1",
+			"bdSize":"16",
+			"onBeforeClick":function(cmd, cfg){
+				/*
+				if(cfg.bdUrl==''){
+					// x!异步
+					seajs.use(['network'],function(network){
+						new network.ajax({url:"/swe/shorturl",type:"post",data:{url:"http://t.cn/A6pZ4HAW"},success:function(msg){
+							if(msg.status==0){
+								cfg.bdUrl = msg.data.url;
+							}
+						}});
+					});
+				}*/
+				return cfg;
+			}
+		},
+		"share":{},
+		"image":{
+			"viewList":["qzone","tsina","tqq","renren","weixin"],
+			"viewText":"分享到：","viewSize":"16"
+		},
+		"selectShare":{
+			"bdContainerClass":null,
+			"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]
+		}
+	};
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+</script> -->
+<script type="text/javascript">
+    var apk = 'http://f.sinaimg.cn/astro/8b3c0c17/20200915/SinaAstro-release_633_202_1.7.9_release.apk';
+</script>
+<!-- SUDA_CODE_START DAGGER --> 
+<script type="text/javascript" src="//www.sinaimg.cn/unipro/pub/suda_s_v851c.js"></script>
+<noScript> 
+<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='//beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div> 
+</noScript> 
+<!-- SUDA_CODE_END DAGGER -->
+</body>
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/product/fortuneResult.js?version=1.0.0"></script>
+
+<script src="/js/share.js"></script>
+<script src="/js/QRcode.js"></script>
+
+<script>
+		var $config = {
+		image:"http://swe.astro.sina.com.cn/r_0/Ma_104d4EL30d40N/Mz_8/Mt_1989|05|26|00|00/swe.png",
+		title:"#我的星盘#本宫绝世冷艳，被万字免费报告解读透了。",
+		url:"http://t.cn/A6pZ4HAW",
+};
+	socialShare('.social-share', $config);
+</script>
+
+</html>
